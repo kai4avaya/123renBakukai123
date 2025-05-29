@@ -113,6 +113,18 @@
             /* Centers the image */
             border-radius: 3px;
             /* Match the container's border radius */
+            image-rendering: -webkit-optimize-contrast;
+            /* Optimize image rendering */
+            image-rendering: crisp-edges;
+            /* Optimize image rendering */
+            -webkit-font-smoothing: antialiased;
+            /* Smooth text rendering */
+            backface-visibility: hidden;
+            /* Optimize rendering performance */
+            transform: translateZ(0);
+            /* Force GPU acceleration */
+            will-change: transform;
+            /* Hint to browser about optimization */
         }
 
         /* Card variations for a more dynamic feel */
@@ -208,7 +220,7 @@
         </div>
         <div class="card-title">Hi, I'm Ren!</div>
         <div class="card-text">
-            <p>I am sensitive, funny, curious, gentle, playful, discerning, intelligent, and full of imagination.</p>
+            <p style="text-align: left;">I am sensitive, funny, curious, gentle, playful, discerning, intelligent, and full of imagination.</p>
         </div>
     </div>
 
